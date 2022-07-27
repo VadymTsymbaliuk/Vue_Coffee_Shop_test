@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Merienda-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Merienda"), url("../fonts/Merienda-Regular.ttf");
+}
+@font-face {
+    font-family: "Merienda-Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Merienda"), url("../fonts/Merienda-Bold.ttf");
+}

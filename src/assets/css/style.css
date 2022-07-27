@@ -1,0 +1,55 @@
+@import "fonts.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Merienda-Regular', cursive;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h1 {
+    font-family: "Merienda-Bold", cursive;
+    font-size: 2.86em;
+    line-height: 58px;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.coffee__house {
+    position: relative;
+
+}
+
+.coffee__house:before {
+    position: absolute;
+    top: -17px;
+    left: -35px;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/coffee-beans.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.btn {
+    font-family: Merienda, cursive;
+    padding: 5px 42px;
+    border: 1px solid #fff;
+    color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+}
+.btn:hover{
+    color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    background: rgba(255, 255, 255, 0.15);
+}
