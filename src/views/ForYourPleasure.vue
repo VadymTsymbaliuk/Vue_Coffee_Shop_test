@@ -1,13 +1,19 @@
 <template>
-<div>
-  For your pleasure
+  <div>
+    <VHeader/>
+    For your pleasure
+    <VFooter/>
 
-</div>
+  </div>
 </template>
 
 <script>
+import VHeader from "@/components/VHeader";
+import VFooter from "@/components/VFooter";
+
 export default {
-  name: "ForYourPleasure"
+  name: "ForYourPleasure",
+  components: {VFooter, VHeader}
 }
 </script>
 
