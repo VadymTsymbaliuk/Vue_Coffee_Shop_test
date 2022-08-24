@@ -1,5 +1,5 @@
 <template>
-  <div class="card__item">
+  <router-link :to="this.aboutCoffee" class="card__item" data-cuolity="{{this.best}}">
     <picture class="card__item__img">
       <source srcset="../assets/images/first__page-sec-2/aromico-coffee-bens-3x.png"
               media="(min-width: 1440px)">
@@ -9,7 +9,7 @@
     </picture>
     <span class="item__name">{{this.coffeeName}} {{this.coffeeWeight}} kg</span>
     <span class="item__price">{{this.coffeePrice}}</span>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -18,11 +18,38 @@ export default {
   props:{
     coffeeName: String,
     coffeeWeight: Number,
-    coffeePrice: Number
+    coffeePrice: Number,
+    best: Boolean,
+    aboutCoffee: String
   }
 }
 </script>
 
 <style scoped>
+.card__item {
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+}
+
+.card__item .card__item__img {
+  margin-bottom: 14px;
+}
+
+.card__item .card__item__img img {
+  max-width: 150px;
+}
+
+.card__item .item__name {
+  white-space: nowrap;
+  padding-bottom: 11px;
+}
+
+.card__item .item__price {
+  text-align: end;
+}
 
 </style>

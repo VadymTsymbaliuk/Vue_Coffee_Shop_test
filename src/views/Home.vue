@@ -23,13 +23,7 @@
       <section class="section_2">
         <div class="container">
           <h2>Our best</h2>
-          <div class="section_2-card_wrapper">
-            <VCard v-for="(item, id) in coffeeItems" :key="id"
-                :coffee-name="item.name"
-                :coffee-weight="item.weight"
-                :coffee-price="item.price"
-            />
-          </div>
+          <VCardContainer />
         </div>
       </section>
     </main>
@@ -39,33 +33,13 @@
 
 <script>
 import VHeader from "@/components/VHeader";
-import VCard from "@/components/VCard";
 import VFooter from "@/components/VFooter";
+import VCardContainer from "@/components/VCardContainer";
 
 export default {
   name: "Home",
-  components: {VFooter, VCard, VHeader},
-  data: () => {
-    return {
-      coffeeItems: [
-        {
-          name: 'Solimo Coffee Beans 2 kg',
-          weight: 2,
-          price: 10.71
-        },
-        {
-          name: 'Presto Coffee Beans 1 kg',
-          weight: 1,
-          price: 15.99
-        },
-        {
-          name: 'AROMISTICO Coffee 1 kg',
-          weight: 1,
-          price: 6.99
-        }
-      ]
-    }
-  }
+  components: {VCardContainer, VFooter,  VHeader},
+
 }
 </script>
 
