@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="this.route" class="card__item" data-cuolity="{{this.best}}">
+  <router-link :to="this.route" class="card__item" :data-cuolity="this.best" :id="this.coffeeCountry">
     <picture class="card__item__img">
       <source srcset="../assets/images/first__page-sec-2/aromico-coffee-bens-3x.png"
               media="(min-width: 1440px)">

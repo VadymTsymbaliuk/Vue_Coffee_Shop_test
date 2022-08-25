@@ -1,17 +1,14 @@
 <template>
-  <section>
-    <div class="container__cards">
+    <div class="container__cards" >
       <VCard v-for="card in cards" :key="card.id"
              :coffee-name="card.name"
              :coffee-weight="card.weight"
              :coffee-price="card.price"
              :coffee-country="card.country"
-             :best="this.best"
              :about-coffee="card.aboutCoffee"
              :route="{name:'Product', params:{id:card.uuid}}"
       />
     </div>
-  </section>
 </template>
 
 <script>
@@ -27,7 +24,7 @@ export default {
     }
   },
   props:{
-    best: Boolean
+    best: Function
   },
   async created() {
     try {

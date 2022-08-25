@@ -6,10 +6,8 @@
     </div>
     <div class="container__filter-filters">
       <span>Or filter</span>
-      <ul>
-        <li id="brazil">Brazil</li>
-        <li id="kenia">Kenia</li>
-        <li id="columbia">Columbia</li>
+      <ul >
+        <li v-for="(list, index) in lists" :key="index" :id="list.id" @click="this.filter(list.id)">{{ list.country }}</li>
       </ul>
     </div>
   </div>
@@ -18,9 +16,25 @@
 <script>
 export default {
   name: "VCardFilter",
-  methods:{
-    filterByCountry(){
-
+  props: {
+    filter: Function
+  },
+  data() {
+    return {
+      lists: [
+        {
+          country: 'Brazil',
+          id: "brazil"
+        },
+        {
+          country: 'Kenia',
+          id: "kenia"
+        },
+        {
+          country: 'Columbia',
+          id: "columbia"
+        }
+      ]
     }
   }
 }

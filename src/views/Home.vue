@@ -23,11 +23,11 @@
       <section class="section_2">
         <div class="container">
           <h2>Our best</h2>
-          <VCardContainer />
+          <VCardContainer :best="showBest"/>
         </div>
       </section>
     </main>
-    <VFooter />
+    <VFooter/>
   </div>
 </template>
 
@@ -38,14 +38,18 @@ import VCardContainer from "@/components/VCardContainer";
 
 export default {
   name: "Home",
-  components: {VCardContainer, VFooter,  VHeader},
-  data(){
-    return{
-      title:"Everything You Love About Coffee",
-      subtitle: true
+  components: {VCardContainer, VFooter, VHeader},
+  data() {
+    return {
+      title: "Everything You Love About Coffee",
+      subtitle: true,
+    }
+  },
+  methods:{
+    showBest(){
+
     }
   }
-
 }
 </script>
 
