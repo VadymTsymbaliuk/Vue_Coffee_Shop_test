@@ -15,7 +15,7 @@
         </ul>
       </div>
       <div class="container__img-wrapper">
-        <img src="../assets/images/beans-logo.svg" alt="coffee beans">
+        <img src="../assets/images/beans-logo-black.svg" alt="coffee beans">
       </div>
     </div>
   </footer>

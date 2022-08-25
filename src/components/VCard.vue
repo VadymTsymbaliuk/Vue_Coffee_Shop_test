@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="this.aboutCoffee" class="card__item" data-cuolity="{{this.best}}">
+  <router-link :to="this.route" class="card__item" data-cuolity="{{this.best}}">
     <picture class="card__item__img">
       <source srcset="../assets/images/first__page-sec-2/aromico-coffee-bens-3x.png"
               media="(min-width: 1440px)">
@@ -10,7 +10,6 @@
     <span class="item__name">{{ this.coffeeName }} {{ this.coffeeWeight }} kg</span>
     <span>{{ this.coffeeCountry }}</span>
     <span class="item__price">{{ this.coffeePrice }} $</span>
-    <span>{{this.$route}}</span>
   </router-link>
 </template>
 
@@ -24,8 +23,8 @@ export default {
     coffeeCountry: String,
     best: Boolean,
     aboutCoffee: String,
-    route:String
-  }
+    route:Object
+  },
 }
 </script>
 

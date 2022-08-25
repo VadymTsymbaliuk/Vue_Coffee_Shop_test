@@ -1,6 +1,9 @@
 <template>
 <div>
-  <VHeader />
+  <VHeader :title="this.title"
+           :subtitle="this.subtitle"
+           :style="backgroundImage"
+      />
  <main>
   <div class="container">
 <!--    TODO: стилі у контейнері about-beans та about our-goods абсолютно ідентичні, треба задублювати їх-->
@@ -35,7 +38,12 @@ export default {
           "met spot shy want. Children me laughing we prospect answered followed. At it went\n" +
           "is song that held help face.",
       aboutAlt:"Our Coffee",
-      aboutImage:require('@/assets/images/our-coffee.png')
+      aboutImage:require('@/assets/images/our-coffee.png'),
+      title:"Our Coffee",
+      subtitle:false,
+      backgroundImage:{
+        backgroundImage: `url(${require('@/assets/images/bg/header_second_bg.png')})`
+      }
     }
   },
   methods:{

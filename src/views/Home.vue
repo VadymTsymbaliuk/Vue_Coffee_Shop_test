@@ -1,12 +1,12 @@
 <template>
   <div>
-    <VHeader/>
+    <VHeader :title="this.title" :subtitle="this.subtitle"/>
     <main>
       <section class="section_1">
         <div class="container">
           <h2>About Us</h2>
           <picture>
-            <img src="../assets/images/beans-logo.svg" alt="beans logo">
+            <img src="../assets/images/beans-logo-black.svg" alt="beans logo">
           </picture>
           <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
             Afraid at highly months do things on at. Situation recommend objection do intention
@@ -39,6 +39,12 @@ import VCardContainer from "@/components/VCardContainer";
 export default {
   name: "Home",
   components: {VCardContainer, VFooter,  VHeader},
+  data(){
+    return{
+      title:"Everything You Love About Coffee",
+      subtitle: true
+    }
+  }
 
 }
 </script>

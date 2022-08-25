@@ -61,7 +61,8 @@ h1, h2, span, p {
 
 
 header {
-    height: 640px;
+    /*height: 440px;*/
+    padding-bottom: 200px;
     padding-top: 30px;
     background-image: url("../images/bg/header_first_bg.jpg");
     background-repeat: no-repeat;
@@ -96,6 +97,12 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.header__section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__section span {

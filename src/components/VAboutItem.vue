@@ -5,7 +5,7 @@
     </picture>
     <div class="container__wrapper__about-text">
       <h2>About our beans</h2>
-      <img src="../assets/images/beans-logo.svg" alt="coffee beans">
+      <img src="../assets/images/beans-logo-black.svg" alt="coffee beans">
       <p>
         {{this.aboutText}}
       </p>

@@ -8,7 +8,7 @@
              :coffee-country="card.country"
              :best="this.best"
              :about-coffee="card.aboutCoffee"
-             :route="card.$route.params.id"
+             :route="{name:'Product', params:{id:card.uuid}}"
       />
     </div>
   </section>
@@ -36,6 +36,13 @@ export default {
     } catch (e) {
       console.log(e)
     }
+  },
+  computed:{
+    showProduct(){
+      const id = this.$route.params.id,
+          product = this.cards.find((p)=> p.uuid === id);
+      return product
+    }
   }
 }
 </script>
@@ -43,7 +50,6 @@ export default {
 <style scoped>
 .container__cards{
   display: flex;
-  /*justify-content: space-between;*/
   gap: 65px;
   flex-wrap: wrap;
 }

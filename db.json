@@ -9,6 +9,7 @@
       "price": 10.71,
       "best": true,
       "aboutCoffee": "/solimo_coffee_beans",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
@@ -20,6 +21,7 @@
       "price": 15.99,
       "best": false,
       "aboutCoffee": "/presto_coffee_beans",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
@@ -31,6 +33,7 @@
       "price": 6.99,
       "best": true,
       "aboutCoffee": "/aromistico_coffee",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
@@ -42,6 +45,7 @@
       "price": 15.99,
       "best": false,
       "aboutCoffee": "/aroma_coffee",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
@@ -53,6 +57,7 @@
       "price": 15.99,
       "best": true,
       "aboutCoffee": "/lviv`s_coffee",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
@@ -64,6 +69,7 @@
       "price": 15.99,
       "best": false,
       "aboutCoffee": "/vien_coffee",
+      "images": "@/assets/images/our-coffee.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   ]
