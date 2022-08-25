@@ -3,7 +3,6 @@
     <div class="container__filter-looking-for">
       <label for="looking-coffee">Looking for</label>
       <input type="text" id="looking-coffee" placeholder="start typing here...">
-
     </div>
     <div class="container__filter-filters">
       <span>Or filter</span>
@@ -18,7 +17,12 @@
 
 <script>
 export default {
-  name: "VCardFilter"
+  name: "VCardFilter",
+  methods:{
+    filterByCountry(){
+
+    }
+  }
 }
 </script>
 
@@ -26,6 +30,7 @@ export default {
 .container__filter {
   display: flex;
   gap: 83px;
+  margin-bottom: 60px;
 }
 
 .container__filter div {

@@ -5,8 +5,10 @@
              :coffee-name="card.name"
              :coffee-weight="card.weight"
              :coffee-price="card.price"
-             :best="card.best"
+             :coffee-country="card.country"
+             :best="this.best"
              :about-coffee="card.aboutCoffee"
+             :route="card.$route.params.id"
       />
     </div>
   </section>
@@ -24,6 +26,9 @@ export default {
       cards: []
     }
   },
+  props:{
+    best: Boolean
+  },
   async created() {
     try {
       const res = await axios.get('http://localhost:3001/coffeeSorts')
@@ -39,8 +44,11 @@ export default {
 .container__cards{
   display: flex;
   /*justify-content: space-between;*/
-  gap: 71px;
+  gap: 65px;
   flex-wrap: wrap;
+}
+.container__cards a{
+  text-decoration: none;
 }
 
 

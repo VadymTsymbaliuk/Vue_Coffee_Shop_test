@@ -21,9 +21,10 @@ import VHeader from "@/components/VHeader";
 import VFooter from "@/components/VFooter";
 import VCardContainer from "@/components/VCardContainer";
 import VAboutItem from "@/components/VAboutItem";
+import VCardFilter from "@/components/VCardFilter";
 export default {
   name: "OurCoffee",
-  components: {VAboutItem, VCardContainer, VHeader, VFooter},
+  components: {VCardFilter, VAboutItem, VCardContainer, VHeader, VFooter},
   data(){
     return{
       aboutText:"Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.\n" +
