@@ -17,11 +17,15 @@
         </nav>
       </div>
       <div class="header__section">
-        <h1>Everything You Love About Coffee</h1>
-        <picture></picture>
-        <span>We makes every day full of energy and taste</span>
-        <span>Want to try our beans?</span>
-        <button class="btn">More</button>
+        <h1>{{this.title}}</h1>
+        <div v-if="this.subtitle">
+          <picture>
+            <img src="../assets/images/beans-logo-white.svg" alt="logo">
+          </picture>
+          <span>We makes every day full of energy and taste</span>
+          <span>Want to try our beans?</span>
+          <button class="btn">More</button>
+        </div>
       </div>
     </div>
   </header>
@@ -29,7 +33,11 @@
 
 <script>
 export default {
-  name: "VHeader"
+  name: "VHeader",
+  props:{
+    title: String,
+    subtitle: Boolean
+  }
 }
 </script>
 

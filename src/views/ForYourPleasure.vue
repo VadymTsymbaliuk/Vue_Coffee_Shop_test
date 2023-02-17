@@ -1,6 +1,9 @@
 <template>
   <div>
-    <VHeader/>
+    <VHeader :title="this.title"
+             :subtitle="this.subtitle"
+             :style="backgroundImage"
+    />
     <main>
       <div class="container">
         <VAboutItem
@@ -33,8 +36,13 @@ export default {
           "As greatly removed calling pleased improve an. Last ask him cold feel\n" +
           "met spot shy want. Children me laughing we prospect answered followed. At it went\n" +
           "is song that held help face.",
-      aboutAlt:"About our goods",
-      aboutImage:require('@/assets/images/for-your-pleasure.jpg')
+      aboutAlt: "About our goods",
+      aboutImage: require('@/assets/images/for-your-pleasure.jpg'),
+      title: "For your pleasure",
+      subtitle: false,
+      backgroundImage:{
+        backgroundImage: `url(${require('@/assets/images/bg/header_third_bg.png')})`
+      }
     }
   },
 }

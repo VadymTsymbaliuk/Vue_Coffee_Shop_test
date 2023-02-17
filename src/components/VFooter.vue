@@ -15,7 +15,7 @@
         </ul>
       </div>
       <div class="container__img-wrapper">
-        <img src="../assets/images/beans-logo.svg" alt="coffee beans">
+        <img src="../assets/images/beans-logo-black.svg" alt="coffee beans">
       </div>
     </div>
   </footer>
@@ -28,5 +28,28 @@ export default {
 </script>
 
 <style scoped>
+footer {
+  padding-top: 60px;
+}
+footer .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container div{
+  margin: 10px auto 20px;
+}
+
+footer .footer__navigation_wrapper ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+
+}
+
+footer .footer__navigation_wrapper ul a {
+  text-decoration: none;
+  color: #000;
+}
 
 </style>

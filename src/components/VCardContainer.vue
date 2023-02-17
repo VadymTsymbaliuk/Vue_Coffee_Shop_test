@@ -1,15 +1,14 @@
 <template>
-  <section>
-    <div class="container__cards">
+    <div class="container__cards" >
       <VCard v-for="card in cards" :key="card.id"
              :coffee-name="card.name"
              :coffee-weight="card.weight"
              :coffee-price="card.price"
-             :best="card.best"
+             :coffee-country="card.country"
              :about-coffee="card.aboutCoffee"
+             :route="{name:'Product', params:{id:card.uuid}}"
       />
     </div>
-  </section>
 </template>
 
 <script>
@@ -24,12 +23,22 @@ export default {
       cards: []
     }
   },
+  props:{
+    best: Function
+  },
   async created() {
     try {
       const res = await axios.get('http://localhost:3001/coffeeSorts')
       this.cards = res.data
     } catch (e) {
       console.log(e)
+    }
+  },
+  computed:{
+    showProduct(){
+      const id = this.$route.params.id,
+          product = this.cards.find((p)=> p.uuid === id);
+      return product
     }
   }
 }
@@ -38,9 +47,11 @@ export default {
 <style scoped>
 .container__cards{
   display: flex;
-  /*justify-content: space-between;*/
-  gap: 71px;
+  gap: 65px;
   flex-wrap: wrap;
+}
+.container__cards a{
+  text-decoration: none;
 }
 
 

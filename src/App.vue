@@ -9,7 +9,13 @@
 export default {
   name: 'App',
   components: {},
-  computed: {}
+  computed: {
+    showCoffeePage(){
+      const id = this.$route.params.id
+      const product = this.avaliableProduct.find((p)=>p.uuid == id)
+      return product
+    }
+  }
 }
 </script>
 

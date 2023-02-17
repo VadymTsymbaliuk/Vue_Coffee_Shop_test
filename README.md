@@ -19,6 +19,11 @@ npm run build
 ```
 npm run lint
 ```
+### Run json-server
+```
+"json-server --watch db.json --port=3001"
+```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

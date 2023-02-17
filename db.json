@@ -1,0 +1,76 @@
+{
+  "coffeeSorts": [
+    {
+      "id": 1,
+      "uuid": 1,
+      "name": "Solimo Coffee Beans",
+      "weight": 2,
+      "country": "Brazil",
+      "price": 10.71,
+      "best": true,
+      "aboutCoffee": "/solimo_coffee_beans",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 2,
+      "uuid": 2,
+      "name": "Presto Coffee Beans",
+      "weight": 1,
+      "country": "Kenia",
+      "price": 15.99,
+      "best": false,
+      "aboutCoffee": "/presto_coffee_beans",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 3,
+      "uuid": 3,
+      "name": "AROMISTICO Coffee",
+      "weight": 1,
+      "country": "Columbia",
+      "price": 6.99,
+      "best": true,
+      "aboutCoffee": "/aromistico_coffee",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 4,
+      "uuid": 4,
+      "name": "AROMA Coffee",
+      "weight": 1,
+      "country": "Brazil",
+      "price": 15.99,
+      "best": false,
+      "aboutCoffee": "/aroma_coffee",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 5,
+      "uuid": 5,
+      "name": "Lviv`s Coffee",
+      "weight": 1,
+      "country": "Kenia",
+      "price": 15.99,
+      "best": true,
+      "aboutCoffee": "/lviv`s_coffee",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 6,
+      "uuid": 6,
+      "name": "VIEN Coffee",
+      "weight": 1,
+      "country": "Columbia",
+      "price": 15.99,
+      "best": false,
+      "aboutCoffee": "/vien_coffee",
+      "images": "@/assets/images/our-coffee.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+}

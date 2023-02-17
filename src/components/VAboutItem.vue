@@ -5,7 +5,7 @@
     </picture>
     <div class="container__wrapper__about-text">
       <h2>About our beans</h2>
-      <img src="../assets/images/coffee-beans.svg" alt="coffee beans">
+      <img src="../assets/images/beans-logo-black.svg" alt="coffee beans">
       <p>
         {{this.aboutText}}
       </p>
@@ -31,6 +31,7 @@ export default {
   gap: 79px;
   padding: 70px 30px 60px;
   margin-bottom: 60px;
+  text-align: center;
 }
 .container__wrapper:after{
   content: "";
@@ -41,6 +42,9 @@ export default {
   width: 240px;
   height: 1px;
   background-color: #000;
+}
+.container__wrapper img{
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
 }
 .container__wrapper__about-text{
   padding-top: 10px;
